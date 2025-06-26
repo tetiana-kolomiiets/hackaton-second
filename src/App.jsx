@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Link } from 'react-router-dom'
 import Box from '@mui/material/Box'
 import Sidebar from './components/Sidebar'
 import AppRoutes from './Routes'
+import ChatWidget from './components/ChatWidget'
 // Placeholder for future WebSocket hook
 // import useWebSocket from './hooks/useWebSocket'
 
@@ -16,6 +17,7 @@ const App = () => {
           <AppRoutes />
         </Box>
       </Box>
+      <ChatWidget />
     </Router>
   )
 }
